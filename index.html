@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Шишка – кофейня с сибирским характером, Красноярск</title>
+<meta name="description" content="Мини-кофейня «Шишка» в центре Красноярска, Парижской Коммуны, 3: кедровый и лесной раф, таёжные чаи, сэндвичи на горячем хлебе, сибирские подарки. В будни с 7:30. Меню с ценами.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Шишка">
+<meta property="og:title" content="Шишка – кофейня с сибирским характером в центре Красноярска">
+<meta property="og:description" content="Кедровый раф, чаи с морошкой, сэндвичи на горячем хлебе. Парижской Коммуны, 3, в будни с 7:30. 5,0 в 2ГИС.">
+<meta property="og:url" content="https://lshumilov.github.io/shishka-demo/">
+<meta property="og:image" content="https://lshumilov.github.io/shishka-demo/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23121715%27/%3E%3Cpath d=%27M16 5c5 4 7 9 7 13s-3 9-7 9-7-5-7-9 2-9 7-13z%27 fill=%27%23a8693a%27/%3E%3Cpath d=%27M11 15h10M10 19h12M11 23h10%27 stroke=%27%23f2c230%27 stroke-width=%271.4%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&family=Golos+Text:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Шишка","telephone":"+79135385608","servesCuisine":"Кофе, чай, сэндвичи",
+"address":{"@type":"PostalAddress","streetAddress":"улица Парижской Коммуны, 3","addressLocality":"Красноярск","postalCode":"660049","addressCountry":"RU"},
+"openingHours":["Mo-Fr 07:30-22:00","Sa-Su 09:00-22:00"],"priceRange":"129–389 ₽",
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"370"},"sameAs":["https://2gis.ru/krasnoyarsk/firm/70000001031580569"]}
+</script>
+<style>
+  html, body { background: #121715; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  .v-page {
+    --v-canvas: #121715;
+    --v-surface: #1b221f;
+    --v-ink: #efe8da;
+    --v-ink-soft: #b0b4a8;
+    --v-accent: #f2c230;
+    --v-accent-ink: #15130a;
+    --v-shadow-color: 0 0 0;
+    --v-font-display: "Rubik", "Arial", system-ui, sans-serif;
+    --v-font-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
+    --v-display-weight: 600;
+    --v-radius: 14px;
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-t-sm: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+    --v-t-xs: clamp(0.8rem, 0.78rem + 0.1vw, 0.86rem);
+    --wood: #a8693a;
+  }
+  .v-page button.v-btn { background: var(--v-accent); color: var(--v-accent-ink); }
+  .y { color: var(--v-accent); }
+
+  /* ---------- шапка ---------- */
+  .bar { position: fixed; z-index: 30; left: 0; right: 0; top: 0; display: flex; align-items: center; gap: var(--v-6);
+    padding: .8rem var(--v-gutter); transition: background-color .25s var(--v-ease-out), box-shadow .25s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(18 23 21 / .96); box-shadow: 0 1px 0 var(--v-hair); }
+  .logo { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; font-family: var(--v-font-display); font-weight: 600; font-size: 1.3rem; }
+  .logo svg { width: 22px; height: 30px; }
+  .bar__nav { display: flex; gap: var(--v-5); margin-left: auto; font-size: var(--v-t-sm); }
+  .bar__nav a { text-decoration: none; color: var(--v-ink-soft); transition: color .15s var(--v-ease-out); }
+  .bar__tel { font-size: var(--v-t-sm); text-decoration: none; white-space: nowrap; }
+  .bar .v-btn { padding: .7em 1.3em; }
+  @media (hover: hover) and (pointer: fine) { .bar__nav a:hover { color: var(--v-ink); } }
+  @media (max-width: 980px) { .bar__nav { display: none; } .bar__tel { margin-left: auto; } }
+  @media (max-width: 520px) { .bar__tel { display: none; } .bar .v-btn { margin-left: auto; } }
+
+  /* ---------- 1. первый экран ---------- */
+  .hero__ph img { position: absolute; left: -4%; top: -6%; width: 108%; height: 112%; max-width: none; object-fit: cover; object-position: 60% 50%; }
+  .hero__shade { position: absolute; inset: 0; z-index: 2;
+    background: linear-gradient(90deg, rgb(18 23 21 / .94) 0%, rgb(18 23 21 / .78) 36%, rgb(18 23 21 / .15) 66%, transparent 80%),
+                linear-gradient(0deg, rgb(18 23 21 / .8) 0%, transparent 28%); }
+  .hero .v-copy { left: var(--v-gutter); top: 50%; translate: 0 -46%; max-width: min(40rem, 50vw); }
+  .rate { display: inline-flex; align-items: center; gap: .6rem; padding: .35rem .9rem .35rem .6rem; border-radius: 999px;
+    background: rgb(255 255 255 / .07); box-shadow: inset 0 0 0 1px var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .rate b { font-family: var(--v-font-display); color: var(--v-accent); font-size: 1.05rem; }
+  .hero h1 { margin-top: var(--v-5); }
+  @media (min-width: 861px) { .hero h1 { font-size: min(var(--v-t-3xl), 8.2svh, 4.6vw); } }
+  .hero .v-lede { margin-top: var(--v-5); color: var(--v-ink-soft); max-width: 34ch; }
+  .hero__act { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-5); margin-top: var(--v-6); }
+  .hero__act a:not(.v-btn) { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .hero__q h2 { margin-top: var(--v-3); max-width: 14ch; }
+  .v-page .first { margin-top: var(--v-6); display: grid; gap: 0; max-width: 32rem; }
+  .first li { display: flex; align-items: baseline; gap: var(--v-3); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-lg); }
+  .first li i { flex: 1; border-bottom: 2px dotted var(--v-hair-strong); transform: translateY(-.3em); }
+  .first li b { font-family: var(--v-font-display); font-weight: 600; color: var(--v-accent); }
+  .first li span small { display: block; font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .hero__ph img { left: 0; top: auto; bottom: 0; width: 100%; height: 52%; object-position: 30% 50%; }
+    .hero__shade { background: linear-gradient(180deg, #121715 0%, rgb(18 23 21 / .95) 46%, rgb(18 23 21 / .25) 62%, transparent 74%, rgb(18 23 21 / .45) 100%); }
+    .hero .v-copy { top: 5rem; translate: none; right: var(--v-gutter); max-width: none; }
+    .hero h1 { margin-top: var(--v-4); }
+    .hero .v-lede { margin-top: var(--v-4); }
+    .hero__act { margin-top: var(--v-5); }
+    .first li { padding: var(--v-3) 0; font-size: var(--v-t-base); }
+  }
+
+  /* ---------- 2. меню-доска ---------- */
+  .board { position: relative; margin-top: var(--v-7); padding: clamp(1.5rem, 4vw, 3.5rem); border-radius: var(--v-radius);
+    background: #0d1110; box-shadow: inset 0 0 0 1px var(--v-hair), 0 30px 60px rgb(0 0 0 / .35); overflow: hidden; }
+  .board__wave { position: absolute; right: -2rem; top: -2rem; width: 16rem; height: auto; opacity: .9; pointer-events: none; }
+  .board__cols { position: relative; columns: 3 18rem; column-gap: clamp(1.5rem, 4vw, 3.5rem); }
+  .grp { break-inside: avoid; margin: 0 0 var(--v-6); }
+  .grp summary { list-style: none; cursor: default; display: flex; align-items: baseline; justify-content: space-between; gap: var(--v-3);
+    font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); text-transform: uppercase; letter-spacing: .01em; }
+  .grp summary::-webkit-details-marker { display: none; }
+  .grp summary small { font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: .06em; color: var(--v-accent); text-transform: none; }
+  .grp ul { margin-top: var(--v-3); }
+  .grp li { display: flex; align-items: baseline; gap: .5rem; padding: .32rem 0; font-size: var(--v-t-sm); }
+  .grp li i { flex: 1; min-width: 1rem; border-bottom: 2px dotted rgb(239 232 218 / .22); transform: translateY(-.3em); }
+  .grp li b { font-weight: 600; white-space: nowrap; }
+  .grp li em { font-style: normal; color: var(--v-ink-soft); font-size: var(--v-t-xs); }
+  .grp p.grp__note { margin-top: var(--v-2); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .board__foot { position: relative; margin-top: var(--v-2); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .menu__ph { display: grid; grid-template-columns: 1fr 1.25fr 1fr; gap: var(--v-4); margin-top: var(--v-6); align-items: end; }
+  .menu__ph figure { border-radius: var(--v-radius); overflow: hidden; position: relative; }
+  .menu__ph img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+  .menu__ph figure:nth-child(2) img { aspect-ratio: 4 / 5; }
+  .menu__ph figcaption { position: absolute; left: var(--v-3); bottom: var(--v-3); padding: .3rem .7rem; border-radius: 999px; font-size: var(--v-t-xs);
+    background: rgb(13 17 16 / .8); }
+  @media (max-width: 860px) {
+    .grp summary { cursor: pointer; }
+    .grp summary::after { content: "+"; color: var(--v-accent); font-size: 1.3em; line-height: 1; }
+    .grp[open] summary::after { content: "–"; }
+    .grp { margin-bottom: var(--v-4); padding-bottom: var(--v-4); border-bottom: 1px solid var(--v-hair); }
+    .menu__ph { grid-template-columns: 1fr 1fr; }
+    .menu__ph figure:nth-child(3) { display: none; }
+  }
+
+  /* ---------- 3. характер: шишка раскрывается ---------- */
+  .har [data-v-stage] { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: var(--v-8); padding: 6rem var(--v-gutter) 3rem; }
+  .har__head { position: absolute; left: var(--v-gutter); top: clamp(5.5rem, 13vh, 8rem); z-index: 3; }
+  .har__vis { position: relative; justify-self: center; width: min(30vw, 56vh); aspect-ratio: 2 / 3; margin-top: 3rem;
+    --open: clamp(0, calc((var(--v-p, 0) - 0.06) * 1.6), 1); }
+  .har__glow { position: absolute; inset: -20%; background: radial-gradient(closest-side, rgb(242 194 48 / calc(.04 + var(--open) * .16)), transparent 70%); }
+  .cone { position: relative; width: 100%; height: 100%; overflow: visible; }
+  .cone .sc { transform-box: fill-box; transform-origin: 50% 0; transform: rotate(calc(var(--a) * var(--open))) translateY(calc(var(--open) * var(--d)));
+    fill: url(#scale); stroke: #3d2412; stroke-width: 1; }
+  .cone .stem { fill: #5a3a1f; }
+  .har__steps { position: relative; min-height: 20rem; margin-top: 4rem; }
+  .hstep { position: absolute; left: 0; right: 0; top: 50%; translate: 0 -50%; max-width: 32rem; }
+  .hstep__n { font-size: var(--v-t-sm); font-weight: 600; color: var(--v-accent); }
+  .hstep h3 { margin-top: var(--v-3); }
+  .hstep p { margin-top: var(--v-4); color: var(--v-ink-soft); font-size: var(--v-t-lg); line-height: 1.45; max-width: 32ch; }
+  @media (max-width: 860px) {
+    .har [data-v-stage] { grid-template-columns: 1fr; grid-template-rows: auto 1fr; gap: var(--v-5); padding: 10.5rem var(--v-gutter) 3rem; align-items: start; }
+    .har__vis { width: auto; height: min(30svh, 17rem); margin-top: 0; order: -1; }
+    .har__steps { margin-top: 0; min-height: 14rem; }
+    .hstep { top: 0; translate: none; }
+  }
+
+  /* ---------- 4. место ---------- */
+  .place__fig { margin: var(--v-7) 0 0; border-radius: var(--v-radius); overflow: hidden; }
+  .place__fig img { width: 100%; height: clamp(16rem, 46vw, 36rem); object-fit: cover; object-position: 50% 45%; }
+  .place__grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: var(--v-8); margin-top: var(--v-7); align-items: start; }
+  .v-page .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--v-6); }
+  .facts li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); }
+  .facts b { display: block; font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); }
+  .facts span { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .place__side { border-radius: var(--v-radius); overflow: hidden; }
+  .place__side img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+  @media (max-width: 860px) { .place__grid { grid-template-columns: 1fr; gap: var(--v-6); margin-top: var(--v-6); } .facts { grid-template-columns: 1fr; } .place__side { display: none; } }
+
+  /* ---------- 5. подарки ---------- */
+  .gift__grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: var(--v-8); align-items: center; }
+  .gift__ph { position: relative; height: clamp(24rem, 46vw, 36rem); }
+  .gift__ph figure { position: absolute; border-radius: var(--v-radius); overflow: hidden; box-shadow: 0 24px 50px rgb(0 0 0 / .45); }
+  .gift__ph img { width: 100%; height: 100%; object-fit: cover; }
+  .gift__ph .g1 { left: 0; top: 0; width: 58%; height: 78%; }
+  .gift__ph .g2 { right: 0; top: 12%; width: 46%; height: 52%; }
+  .gift__ph .g3 { right: 6%; bottom: 0; width: 52%; height: 36%; }
+  .gift h2 { margin-top: var(--v-3); }
+  .gift p.v-lede { margin-top: var(--v-5); color: var(--v-ink-soft); }
+  .gift__note { margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .gift__grid { grid-template-columns: 1fr; gap: var(--v-6); } .gift__ph { height: 22rem; } }
+
+  /* ---------- 6. отзывы ---------- */
+  .rev__top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--v-5); }
+  .rev__score { display: flex; align-items: baseline; gap: var(--v-4); }
+  .rev__score b { font-family: var(--v-font-display); font-weight: 600; font-size: clamp(4rem, 2rem + 6vw, 7rem); line-height: .9; color: var(--v-accent); }
+  .rev__score span { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .rev__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-5); margin-top: var(--v-7); }
+  .q { padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-edge); }
+  .q--big { grid-column: 1 / -1; padding: var(--v-7) var(--v-7) var(--v-6); }
+  .q.q--big blockquote { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.3; max-width: 46ch; }
+  .q blockquote { margin: 0; font-size: var(--v-t-lg); line-height: 1.45; text-wrap: pretty; }
+  .q figcaption { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .rev__all { font-size: var(--v-t-sm); }
+  @media (max-width: 860px) { .rev__grid { grid-template-columns: 1fr; margin-top: var(--v-6); } .q, .q--big { padding: var(--v-5); } .q.q--big blockquote { font-size: var(--v-t-lg); } }
+
+  /* ---------- 7. как добраться ---------- */
+  .find .v-fill img { object-position: 50% 50%; }
+  .find__scrim { position: absolute; inset: 0; z-index: 2;
+    background: radial-gradient(60% 70% at calc(var(--v-mx, .3) * 100%) calc(var(--v-my, .5) * 100%), rgb(242 194 48 / .08), transparent 70%),
+                linear-gradient(90deg, rgb(18 23 21 / .95) 0%, rgb(18 23 21 / .82) 45%, rgb(18 23 21 / .35) 100%); }
+  .find .v-copy { left: var(--v-gutter); top: calc(50% + 1.5rem); translate: 0 -50%; max-width: min(40rem, 60vw); }
+  .find .v-lede { margin-top: var(--v-5); color: var(--v-ink-soft); }
+  .find__rows { margin-top: var(--v-6); display: grid; gap: 0; max-width: 30rem; }
+  .find__rows div { display: grid; grid-template-columns: 7rem 1fr; gap: var(--v-4); padding: var(--v-3) 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); }
+  .find__rows dt { color: var(--v-ink-soft); }
+  .find__rows dd { margin: 0; }
+  .find__act { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-5); margin-top: var(--v-6); }
+  .find__act a:not(.v-btn) { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .find__scrim { background: linear-gradient(180deg, rgb(18 23 21 / .96) 0%, rgb(18 23 21 / .9) 70%, rgb(18 23 21 / .5) 100%); }
+    .find .v-copy { top: 5.2rem; translate: none; right: var(--v-gutter); max-width: none; }
+    .find__rows div { grid-template-columns: 6rem 1fr; }
+  }
+  .foot { padding: var(--v-6) var(--v-gutter) var(--v-7); font-size: var(--v-t-xs); color: var(--v-ink-soft); border-top: 1px solid var(--v-hair); }
+  .foot__in { width: min(100%, 76rem); margin-inline: auto; display: flex; flex-wrap: wrap; gap: var(--v-3) var(--v-6); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="scale" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e3a1c"/>
+      <stop offset=".55" stop-color="#9a6234"/>
+      <stop offset="1" stop-color="#d09a62"/>
+    </linearGradient>
+  </defs>
+  <symbol id="cone-mini" viewBox="0 0 22 30"><path d="M11 2c5 4 8 9 8 15s-4 11-8 11-8-5-8-11 3-11 8-15z" fill="#a8693a"/><path d="M5 12h12M4 17h14M5 22h12" stroke="#f2c230" stroke-width="1.3"/></symbol>
+</svg>
+<main class="v-page">
+  <div data-v-progress></div>
+
+  <header class="bar">
+    <a class="logo" href="#top"><svg aria-hidden="true"><use href="#cone-mini"/></svg>Шишка</a>
+    <nav class="bar__nav" aria-label="Разделы">
+      <a href="#menu">Меню</a>
+      <a href="#mesto">Зал</a>
+      <a href="#podarki">Подарки</a>
+      <a href="#otzyvy">Отзывы</a>
+    </nav>
+    <a class="bar__tel" href="tel:+79135385608">+7 913 538-56-08</a>
+    <a class="v-btn" href="#adres">Как добраться</a>
+  </header>
+
+  <!-- 1. Первый экран -->
+  <section class="hero" id="top" data-v-act="pin" data-v-span="2.2" data-v-drift="#121715">
+    <div data-v-stage>
+      <div class="v-layer hero__ph" data-v-parallax="-0.4"><img src="assets/hero.webp" alt="Зал кофейни «Шишка»: стена с таёжным лесом, полки с чаями и подарками, деревянная шишка"></div>
+      <div class="hero__shade"></div>
+
+      <div class="v-copy" data-v-cue="0 0.6 0 0.1">
+        <p class="rate"><b>5,0</b> 370 оценок в 2ГИС</p>
+        <h1 class="v-display v-display--lg" data-v-kinetic="lines">Кофейня с сибирским характером в центре Красноярска</h1>
+        <p class="v-lede">Кедровый раф, чаи с морошкой и сэндвичи на горячем хлебе. В будни с 7:30, в 300 м от музея Сурикова.</p>
+        <div class="hero__act">
+          <a class="v-btn" href="#adres">Как добраться</a>
+          <a href="#menu">Меню и цены</a>
+        </div>
+      </div>
+
+      <div class="v-copy hero__q" data-v-cue="0.62 0.96 0.06 0.04">
+        <p class="v-label">Если вы у нас впервые</p>
+        <h2 class="v-display v-display--md">Что взять в первый раз</h2>
+        <ul class="first">
+          <li><span>Кедровый раф<small>350 мл</small></span><i></i><b>319 ₽</b></li>
+          <li><span>Чай морошка-лайм<small>450 мл, чай сезона</small></span><i></i><b>279 ₽</b></li>
+          <li><span>Сэндвич с форелью<small>на свежезажаренном хлебе</small></span><i></i><b>389 ₽</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Меню-доска -->
+  <section class="v-section menu" id="menu" data-v-act="flow" data-v-drift="#161d1a">
+    <div class="v-wrap">
+      <div class="v-stack" data-v-in data-v-stagger="70">
+        <p class="v-label">Меню</p>
+        <h2 class="v-display v-display--lg">Цены – как на доске у бара</h2>
+      </div>
+      <div class="board" data-v-in data-v-in-self>
+        <svg class="board__wave" viewBox="0 0 260 200" aria-hidden="true"><path d="M20 10c40 0 60 40 100 40s50-40 90-30 30 70 40 110" fill="none" stroke="#f2c230" stroke-width="22" stroke-linecap="round"/></svg>
+        <div class="board__cols">
+          <details class="grp" open>
+            <summary>Кофе <small>классический</small></summary>
+            <ul>
+              <li>Эспрессо<i></i><b>129</b></li>
+              <li>Американо <em>250 / 350 мл</em><i></i><b>179</b></li>
+              <li>Флэт уайт <em>250 мл</em><i></i><b>200</b></li>
+              <li>Капучино <em>350 / 450 мл</em><i></i><b>239 / 269</b></li>
+              <li>Латте <em>350 / 450 мл</em><i></i><b>239 / 269</b></li>
+              <li>Раф <em>350 / 450 мл</em><i></i><b>259 / 289</b></li>
+            </ul>
+          </details>
+          <details class="grp" open>
+            <summary>Кофе <small>авторский</small></summary>
+            <ul>
+              <li>Лесной раф <em>450 мл</em><i></i><b>309</b></li>
+              <li>Кедровый раф <em>350 мл</em><i></i><b>319</b></li>
+              <li>Ореховый раф<i></i><b>309</b></li>
+              <li>Цитрусовый раф<i></i><b>309</b></li>
+              <li>Ежевичный латте<i></i><b>309</b></li>
+              <li>Латте халва<i></i><b>309</b></li>
+              <li>Айс-латте <em>350 мл</em><i></i><b>309</b></li>
+              <li>Имбирный пряный раф<i></i><b>309</b></li>
+              <li>Мятный пряник раф<i></i><b>309</b></li>
+            </ul>
+          </details>
+          <details class="grp" open>
+            <summary>Чай <small>авторский, 450 мл</small></summary>
+            <ul>
+              <li>Облепиховый, клюквенный, грейпфрутовый<i></i><b>269</b></li>
+              <li>Брусника-апельсин, смородиновый с мятой<i></i><b>269</b></li>
+              <li>Сибирский с характером<i></i><b>269</b></li>
+              <li>С ягодами и розмарином<i></i><b>269</b></li>
+              <li>Сезона: морошка-лайм<i></i><b>279</b></li>
+              <li>Сезона: имбирный с чабрецом<i></i><b>279</b></li>
+              <li>Сезона: мятная вишня с клюквой<i></i><b>279</b></li>
+              <li>Листовой<i></i><b>165</b></li>
+              <li>Иван-чай классический<i></i><b>195</b></li>
+              <li>Иван-чай с можжевельником / саган-дайля<i></i><b>219</b></li>
+            </ul>
+          </details>
+          <details class="grp" open>
+            <summary>Согревающие</summary>
+            <ul>
+              <li>Яблочный пунш<i></i><b>239</b></li>
+              <li>Глинтвейн безалкогольный<i></i><b>269</b></li>
+              <li>Какао горькое / сладкое<i></i><b>229 / 249</b></li>
+            </ul>
+          </details>
+          <details class="grp" open>
+            <summary>Смузи <small>и коктейль</small></summary>
+            <ul>
+              <li>Манго-банан<i></i><b>359</b></li>
+              <li>Клубника-базилик, джинджер-берри<i></i><b>339</b></li>
+              <li>Ежевичный, грейпфрутовый<i></i><b>339</b></li>
+              <li>Банановый<i></i><b>319</b></li>
+              <li>Молочный коктейль<i></i><b>245</b></li>
+            </ul>
+          </details>
+          <details class="grp" open>
+            <summary>Еда</summary>
+            <ul>
+              <li>Сэндвич с форелью<i></i><b>389</b></li>
+              <li>Сэндвич с курицей<i></i><b>уточнить</b></li>
+              <li>Сырники с соусом<i></i><b>279</b></li>
+              <li>Овсяная каша <em>три вкуса</em><i></i><b>225</b></li>
+            </ul>
+            <p class="grp__note">Каша: с чиа, бананом, клюквой и миндалём · с кокосом, бананом и вишней · с яблоком, корицей и кешью. Десерты – на витрине.</p>
+          </details>
+          <details class="grp" open>
+            <summary>Добавки</summary>
+            <ul>
+              <li>Доп. эспрессо, альтернативное молоко<i></i><b>90</b></li>
+              <li>Сливки 10%<i></i><b>45</b></li>
+              <li>Маршмеллоу, арахисовая паста<i></i><b>40</b></li>
+              <li>Молоко / сироп<i></i><b>35 / 30</b></li>
+              <li>Сахар, корица, шоколадная крошка<i></i><b>бесплатно</b></li>
+            </ul>
+          </details>
+        </div>
+        <p class="board__foot">Цены в рублях – по меню-доске в зале. Оплата картой, наличными или по QR-коду.</p>
+      </div>
+      <div class="menu__ph" data-v-in data-v-stagger="80">
+        <figure><img src="assets/kapuchino.webp" alt="Капучино с латте-артом" loading="lazy"><figcaption>Капучино · 239 ₽</figcaption></figure>
+        <figure><img src="assets/sendvich.webp" alt="Сэндвич на гриле и американо" loading="lazy"><figcaption>Сэндвич и американо</figcaption></figure>
+        <figure><img src="assets/latte-blue.webp" alt="Голубой латте с печеньем" loading="lazy"><figcaption>Голубой латте</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Характер: шишка раскрывается -->
+  <section class="har" id="harakter" data-v-act="pin" data-v-span="2.6" data-v-drift="#121715">
+    <div data-v-stage>
+      <div class="har__head" data-v-cue="0 1 0 0">
+        <p class="v-label">Сибирский характер</p>
+        <h2 class="v-display v-display--md">Почему «Шишка»</h2>
+      </div>
+      <div class="har__steps">
+        <div class="hstep" data-v-cue="0 0.34 0 0.05">
+          <p class="hstep__n">Кофе · 319 ₽</p>
+          <h3 class="v-display v-display--md">Кедровый раф</h3>
+          <p>Раф с кедровым вкусом, 350&nbsp;мл. Рядом – лесной, ореховый и цитрусовый, по 309&nbsp;₽.</p>
+        </div>
+        <div class="hstep" data-v-cue="0.34 0.66 0.05 0.05">
+          <p class="hstep__n">Чай · 269–279 ₽</p>
+          <h3 class="v-display v-display--md">Чаи из тайги</h3>
+          <p>Морошка-лайм, мятная вишня с клюквой, иван-чай с можжевельником и саган-дайля.</p>
+        </div>
+        <div class="hstep" data-v-cue="0.66 0.97 0.05 0.04">
+          <p class="hstep__n">Еда · от 225 ₽</p>
+          <h3 class="v-display v-display--md">Сэндвич собирают при вас</h3>
+          <p>На хрустящем свежезажаренном хлебе – так пишут гости. С&nbsp;форелью – 389&nbsp;₽, на завтрак – каша за 225&nbsp;₽.</p>
+        </div>
+      </div>
+      <div class="har__vis" aria-hidden="true">
+        <div class="har__glow"></div>
+        <svg class="cone" viewBox="0 0 200 300"></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Место -->
+  <section class="v-section place" id="mesto" data-v-act="flow" data-v-drift="#161d1a">
+    <div class="v-wrap">
+      <div class="v-stack" data-v-in data-v-stagger="70">
+        <p class="v-label">Зал</p>
+        <h2 class="v-display v-display--lg">Маленький зал с тайгой на стене</h2>
+      </div>
+      <figure class="place__fig" data-v-reveal="up" data-v-reveal-at="0.05 0.45"><img src="assets/zal.webp" alt="Зал кофейни: витрина с десертами, доски меню, гирлянды" loading="lazy"></figure>
+      <div class="place__grid">
+        <ul class="facts" data-v-in data-v-stagger="60">
+          <li><b>До 20 мест</b><span>Уютно вдвоём; компанией больше – лучше навынос</span></li>
+          <li><b>С ноутбуком</b><span>Бесплатный Wi-Fi</span></li>
+          <li><b>С собакой</b><span>Можно, места немного</span></li>
+          <li><b>Кофе с собой</b><span>Заказ навынос – можно позвонить заранее</span></li>
+          <li><b>Оплата</b><span>Картой, наличными, по QR-коду</span></li>
+          <li><b>Рядом</b><span>Музей им. Сурикова – 300 м</span></li>
+        </ul>
+        <figure class="place__side" data-v-in data-v-in-self><img src="assets/shishki.webp" alt="Шишки в стеклянной вазе на столе" loading="lazy" data-v-parallax="-0.4"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Подарки -->
+  <section class="v-section gift" id="podarki" data-v-act="flow" data-v-drift="#121715">
+    <div class="v-wrap gift__grid">
+      <div class="gift__ph" data-v-in data-v-stagger="90">
+        <figure class="g1" data-v-tilt="4"><img src="assets/podarki.webp" alt="Полки-ящики с чаями и сладостями" loading="lazy"></figure>
+        <figure class="g2" data-v-tilt="5"><img src="assets/shokolad.webp" alt="Плитка шоколада с орехами и ягодами" loading="lazy"></figure>
+        <figure class="g3" data-v-tilt="5"><img src="assets/shokolad-ryady.webp" alt="Шоколад с орехами в витрине" loading="lazy"></figure>
+      </div>
+      <div data-v-in data-v-stagger="70">
+        <p class="v-label">Сибирь с собой</p>
+        <h2 class="v-display v-display--lg">Подарки на полках в зале</h2>
+        <p class="v-lede">Чаи, сиропы, сбитни и шоколад с орехами и ягодами – гостям города и тем, кто едет в гости.</p>
+        <p class="gift__note">Что есть сейчас – спросите у бариста или <a href="https://wa.me/79135385608" target="_blank" rel="noopener">в WhatsApp</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Отзывы -->
+  <section class="v-section v-section--tight rev" id="otzyvy" data-v-act="flow" data-v-drift="#161d1a">
+    <div class="v-wrap">
+      <div class="rev__top" data-v-in data-v-stagger="70">
+        <div>
+          <p class="v-label">Отзывы в 2ГИС</p>
+          <div class="rev__score"><b>5,0</b><span><span data-v-count="0 370">370</span> оценок<br>244 отзыва</span></div>
+        </div>
+        <a class="rev__all" href="https://2gis.ru/krasnoyarsk/firm/70000001031580569/tab/reviews" target="_blank" rel="noopener">Все отзывы в 2ГИС</a>
+      </div>
+      <div class="rev__grid" data-v-in data-v-stagger="90">
+        <figure class="q q--big">
+          <blockquote>«Маленькая уютная кофейня , где девушки сами могут собрать для посетителей вкуснейший сэндвич на хрустящем свежезажаренном хлебушке , пенка на их рафе всегда густая и сливочная»</blockquote>
+          <figcaption>Городской житель · 13 сентября 2026</figcaption>
+        </figure>
+        <figure class="q">
+          <blockquote>«Самый внимательный персонал! Я давно такой не встречала в кофейне! А кофе по истиннее с сибирским характером! Очень вкусно и не обычно!»</blockquote>
+          <figcaption>Лукерия Васильевна · 26 сентября 2026</figcaption>
+        </figure>
+        <figure class="q">
+          <blockquote>«Особый восторг вызывают выпечка и напитки: свежайшие горячие круассаны, нежнейший вупи-пай, вкусный кофе флет уайт и авторские чаи (с морошкой-лаймом и мятной вишней с клюквой).»</blockquote>
+          <figcaption>el smgina · 11 января 2026</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Как добраться -->
+  <section class="find" id="adres" data-v-act="pin" data-v-span="1.4" data-v-drift="#121715">
+    <div data-v-stage data-v-spotlight>
+      <div class="v-fill"><img src="assets/zal.webp" alt="" loading="lazy"></div>
+      <div class="find__scrim"></div>
+      <div class="v-copy" data-v-cue="0 1 0 0">
+        <p class="v-label">Как добраться</p>
+        <h2 class="v-display v-display--lg">Парижской Коммуны, 3</h2>
+        <p class="v-lede">Первый этаж жилого дома в центре, 300 м от музея Сурикова.</p>
+        <dl class="find__rows">
+          <div><dt>Пн–Пт</dt><dd>07:30–22:00</dd></div>
+          <div><dt>Сб–Вс</dt><dd>09:00–22:00</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79135385608">+7 913 538-56-08</a></dd></div>
+        </dl>
+        <div class="find__act">
+          <a class="v-btn" href="https://2gis.ru/krasnoyarsk/firm/70000001031580569" target="_blank" rel="noopener" data-v-magnet="0.25" data-v-rise="0">Как добраться</a>
+          <a href="https://wa.me/79135385608" target="_blank" rel="noopener">Заказать навынос в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot__in">
+      <span>Шишка · мини-кофейня · Красноярск, ул. Парижской Коммуны, 3</span>
+      <span>Фото – владельца кофейни из карточки 2ГИС</span>
+    </div>
+  </footer>
+</main>
+
+<script src="vibe.js"></script>
+<script>
+  if (window.innerWidth < 861) {
+    document.querySelector('#top').setAttribute('data-v-span', '1.9');
+    document.querySelector('#harakter').setAttribute('data-v-span', '2.3');
+  }
+  // шишка: чешуйки рядами, нижние рисуем первыми – верхние ложатся поверх, как у настоящей
+  (function () {
+    var svg = document.querySelector('.cone'), NS = 'http://www.w3.org/2000/svg', R = 11, cx = 100, out = [];
+    for (var r = 0; r < R; r++) {
+      var y = 34 + r * 21, W = 66 * Math.sin(Math.PI * (r + 0.8) / (R + 0.6)), k = r % 2 ? 4 : 3, h = 30 + 10 * Math.sin(Math.PI * r / R);
+      for (var j = 0; j < k; j++) {
+        var t = k === 1 ? 0 : (j / (k - 1)) * 2 - 1, x = cx + t * W * 0.78, w = (2 * W) / (k - 0.2) * (1 - Math.abs(t) * 0.18);
+        out.push({ y: y, x: x, w: w, h: h, a: (t * 34 + (r % 2 ? 4 : -4)) * (0.6 + r / R), d: 2 + r * 0.6 });
+      }
+    }
+    out.sort(function (p, q) { return q.y - p.y; });
+    var html = '<rect class="stem" x="94" y="6" width="12" height="34" rx="5"/>';
+    out.forEach(function (s) {
+      var l = (s.x - s.w / 2).toFixed(1), rr = (s.x + s.w / 2).toFixed(1), tip = (s.y + s.h).toFixed(1), mid = (s.y + s.h * 0.72).toFixed(1);
+      html += '<path class="sc" style="--a:' + s.a.toFixed(1) + 'deg;--d:' + s.d.toFixed(1) + 'px" d="M' + l + ' ' + s.y + ' Q' + l + ' ' + mid + ' ' + s.x.toFixed(1) + ' ' + tip + ' Q' + rr + ' ' + mid + ' ' + rr + ' ' + s.y + ' Z"/>';
+    });
+    svg.innerHTML = html;
+  })();
+  Vibe.mount(document.querySelector('.v-page'));
+  // Без анимаций (в Windows выключены «Эффекты анимации» → prefers-reduced-motion): движок vibe.js показывает
+  // все реплики сразу, и реплики, стоящие в одном месте, ложатся друг на друга. Здесь они сменяются мгновенно,
+  // по тем же порогам прокрутки, что и с анимацией. Реплики одного родителя с разными окнами – группа: видны
+  // только самые проявленные (несколько, если проявлены одинаково, например оффер и стикеры с общим окном).
+  (function () {
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    function num(s, d) { var n = parseFloat(s); return isNaN(n) ? d : n; }
+    var items = [];
+    document.querySelectorAll('[data-v-act]').forEach(function (act) {
+      act.querySelectorAll('[data-v-cue]').forEach(function (el) {
+        if (el.closest('[data-v-act]') !== act) return;
+        var a = (el.getAttribute('data-v-cue') || '').trim().split(/\s+/);
+        var from = num(a[0], 0), to = num(a[1], 1), win = Math.max(Math.min(to, 1) - from, 0.0001);
+        var ri = a.length > 2 ? num(a[2], 0.3 * win) : 0.3 * win;
+        var ro = a.length > 3 ? num(a[3], 0.3 * win) : 0.3 * win;
+        items.push({ act: act, el: el, from: from, to: to, ri: ri, ro: ro, hold: a.length < 2, on: null });
+      });
+    });
+    // прозрачность реплики так же, как её считает движок (0..1)
+    function opa(c, p) {
+      var q = c.ri <= 0 ? (p >= c.from ? 1 : 0) : Math.min(Math.max((p - c.from) / c.ri, 0), 1);
+      if (c.hold) return q;
+      var out = c.ro <= 0 ? ((p >= c.to && c.to < 1) ? 0 : 1) : 1 - Math.min(Math.max((p - (c.to - c.ro)) / c.ro, 0), 1);
+      return Math.min(q, out);
+    }
+    var groups = new Map();
+    items.forEach(function (c) { var k = c.el.parentNode; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(c); });
+    groups.forEach(function (g) {
+      var seq = g.length > 1 && g.some(function (c) { return c.from !== g[0].from || c.to !== g[0].to; });
+      g.forEach(function (c) { c.group = seq ? g : null; });
+    });
+    // движок ведёт --v-p сам (с догонялкой), поэтому сверяемся с ним каждый кадр
+    function loop() {
+      items.forEach(function (c) { c.o = opa(c, num(c.act.style.getPropertyValue('--v-p'), 0)); });
+      items.forEach(function (c) {
+        var on;
+        if (c.group) {
+          var max = 0;
+          c.group.forEach(function (d) { if (d.o > max) max = d.o; });
+          on = max > 0.02 && c.o >= max - 0.01;
+        } else on = c.o > 0.5;
+        if (on !== c.on) { c.on = on; c.el.style.visibility = on ? '' : 'hidden'; }
+      });
+      requestAnimationFrame(loop);
+    }
+    loop();
+  })();
+  (function () {
+    var bar = document.querySelector('.bar');
+    function onScroll() { bar.classList.toggle('is-scrolled', window.scrollY > 40); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    // на телефоне меню-доска свёрнута по группам, открыта первая
+    if (window.innerWidth < 861) {
+      document.querySelectorAll('.grp').forEach(function (d, i) { if (i > 0) d.removeAttribute('open'); });
+    } else {
+      document.querySelectorAll('.grp summary').forEach(function (s) { s.addEventListener('click', function (e) { e.preventDefault(); }); });
+    }
+  })();
+</script>
+</body>
+</html>
